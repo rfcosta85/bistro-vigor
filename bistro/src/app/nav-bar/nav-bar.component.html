@@ -1,0 +1,17 @@
+<nav class="c-navbar">
+    <div class="navbar__logo">
+      <!-- <img [src]="path" [alt]="alt"> -->
+    </div>
+    <div class="c-navbar__sections">
+      @for (item of navBarMenuItens; track $index) {
+        <li>
+          {{ item }}
+        </li>
+      }
+    </div>
+
+    <div class="c-navbar__buttons">
+        <button class="c-button">Adicionar Itens</button>
+        <button class="c-navbar__buttons--disabled">Remover Itens</button>
+    </div>
+  </nav>
