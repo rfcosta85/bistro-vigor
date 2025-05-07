@@ -1,0 +1,29 @@
+.c-navbar {
+    padding: 16px;
+
+    &__sections {
+        font-size: 24px;
+        font-weight: 600;        
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 16px;
+        margin-top: 8px;
+        
+        .c-button {
+            border: 1px solid black;
+            padding: 8px;
+            border-radius: 8px;
+            cursor: pointer;            
+        }
+        
+        &--disabled {
+            border-radius: 8px;
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+    }
+    
+}
